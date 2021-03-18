@@ -63,6 +63,14 @@ f = Node('f', b)
 g = Node('g', b)
 h = Node('h', f)
 a.show_sub_node()
+# a
+#  |-- b
+#   |-- f
+#    |-- h
+#   |-- g
+#  |-- c
+#   |-- d
+#   |-- e
 
 
 d = Node('d', None)
@@ -72,4 +80,8 @@ c = Node('c', None, [d, e])
 a = Node('a', None, [b,c])
 print(a.children)
 a.show_sub_node()
-
+# a
+#  |-- b
+#  |-- c
+#   |-- d
+#   |-- e
